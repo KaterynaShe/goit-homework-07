@@ -188,13 +188,13 @@ body {
     color: var(--dark-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.99px) {
     .menu {
         display: none;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.99px) {
     .page-contact {
         display: none;
     }
@@ -466,6 +466,15 @@ body {
     .contact:focus {
         color: var(--accent-color);
     }
+/*
+    .page-contact {
+        margin-left: auto;
+    }*/
+/*
+         .number {
+             padding-bottom: 12px;
+         }*/
+
 
 }
 
@@ -500,11 +509,11 @@ body {
 /*
     .menu-item:not(:last-child) {
          margin-right: 42px;
-    }*/
+    }
 
     .page-contact {
         margin-left: auto;
-    }
+    }*/
 
     .current::after {
         bottom: -25px;
@@ -518,6 +527,7 @@ body {
         line-height: 1.5;
         letter-spacing: 0.02em;
     }
+
 }
 
 /* ============= HERO =====================*/
@@ -784,7 +794,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
     padding-bottom: 32px;
 }
 .team-list-item {
-    flex-basis: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 24px) / 2);
     border-radius: 0px 0px 4px 4px;   
     background-color: var(--normal-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -809,6 +819,10 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 }
 /*------tablet-------*/
 @media screen and (min-width: 768px) {
+    .container {
+            width: 582px;
+            /*768px;*/
+        }
     .team-list {
         display: flex;
         justify-content: center;
@@ -819,20 +833,33 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .social-list {
         /*display: flex;
         justify-content: center;
-        gap: 24px;*/
+        gap: 24px;
         padding-left: 16px;
-        padding-right: 16px;
+        padding-right: 16px;*/
         }
 }
 /*------desktop-------  */
 @media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;    
+    }
+
     .team-list {
         gap: 24px;
     }
+    .team-list-item {
+        flex-basis: calc((100% - 72px) / 4);
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--normal-color);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        width: 264px;
+    }
+
     .social-list {
         padding-left: 0;
         padding-right: 0;
     }
+
 }
 
 .customers {
@@ -893,7 +920,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
         gap: 72px 16px;
     }
     .customers-item {
-        /*width: 190px;*/
+        max-width: 190px;
         flex-basis: calc((100% - 16px) / 2);
     }
     .customers-link {
@@ -902,6 +929,10 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 }
 /* ----------tablet-------- */
 @media screen and (min-width: 768px) {
+    .container {
+            width: 582px;
+            /*768px;*/
+        }
     .customers-list {
         gap: 72px 24px;
     }
@@ -913,6 +944,12 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
     }
 }
 
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+}
 /* ============ /MAIN ================*/
 /* ============ PORTFOLIO ================*/
 .page-portfolio-main {
@@ -1199,6 +1236,13 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .footer-form {
+        display: flex;
+        align-items: center;
+    }
+
+
     .subtitle-social {
         text-align: center;
     }
@@ -1223,9 +1267,9 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
 /* --------tablet--------- */
 @media screen and (min-width: 768px) {
-   /*.container {*/
-      /*  width: 582px;*//*768px;*/
-  /*  }*/
+    .container {
+      width: 582px;/*768px;*/
+    }
 
 
     .footer-wrapp {
@@ -1250,9 +1294,9 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
 /* ---------desktop-------- */
 @media screen and (min-width: 1200px) {
-   /* .container {
+    .container {
         width: 1158px;
-    }
+    }/*
     .page-footer {
         padding-left: 0px;
     }*/
