@@ -238,7 +238,6 @@ body {
     .text-logo-header {
         color: var(--dark-color);
     }
-
     .mobile-menu {
         display: flex;
         flex-direction: column;
