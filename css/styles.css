@@ -57,6 +57,11 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.container-lower {
+    padding: 0 15px;
+    margin: 0 auto;
+}
 /* 
 .container {
     max-width: 1158px;
@@ -313,7 +318,7 @@ body {
 
     .mobile-menu-network {
         display: flex;
-        gap: 56px;
+        gap: 24px;
     }
 
     .mobile-network-item {
@@ -412,6 +417,10 @@ body {
     }
     .mobile-menu {
         display: none;
+    }
+    .mobile-menu-network {
+        display: flex;
+        gap: 56px;
     }
     .page-header {
         padding-top: 16px;
@@ -853,7 +862,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 }
 /*------tablet-------*/
 @media screen and (min-width: 768px) {
-    .container {
+    .container-lower {
             width: 582px;   
     }
     .team-list {
@@ -873,7 +882,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 }
 /*------desktop-------  */
 @media screen and (min-width: 1200px) {
-    .container {
+    .container-lower {
         width: 1158px;    
     }
     .team-list {
@@ -959,7 +968,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 }
 /* ----------tablet-------- */
 @media screen and (min-width: 768px) {
-    .container {
+    .container-lower {
         width: 582px;
     }
     .customers-list {
@@ -975,7 +984,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
 
 @media screen and (min-width: 1200px) {
-    .container {
+    .container-lower {
         width: 1158px;
     }
 }
@@ -1255,7 +1264,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
     }   
 
     .footer-description {
-        text-align: center;
+        text-align: left;
         width: 268px;
     }
 
@@ -1293,10 +1302,9 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
         margin: 0 auto;
     }
 }
-
 /* --------tablet--------- */
 @media screen and (min-width: 768px) {
-    .container {
+    .container-lower {
       width: 582px;
     }
 
@@ -1322,7 +1330,7 @@ screen and (min-width: 768px) and (min-resolution: 2dppx) {
 
 /* ---------desktop-------- */
 @media screen and (min-width: 1200px) {
-    .container {
+    .container-lower {
         width: 1158px;
     }/*
     .page-footer {
@@ -1646,16 +1654,14 @@ transition: opacity var(--time-transition-duration) var(--transition-timing-func
 .container {
     width: 582/768/1158px;
 }
-В мене прописано наступних на рядках для планшетної версії: 380,
-605,
-690 media screen and (min-width: 768px) {
+В мене прописано наступних на рядках для планшетної версії: 
+380,605,690 
+media screen and (min-width: 768px) {
     .container {
         width: 768px;
     }
 
-    835,
-    942,
-    1279 @media screen and (min-width: 768px) {
+860,966,1302 @media screen and (min-width: 768px) {
         .container {
             width: 582px;
         }
