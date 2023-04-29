@@ -378,6 +378,12 @@ body {
         color: var(--accent-color);
     }
 }
+@media screen and (min-width: 428px) {
+    .mobile-menu-network {
+        display: flex;
+        gap: 56px;
+    }
+}
 /*===============  /MOBILE HEADER ==============*/
 /*===============  TABLET HEADER ==============*/
 @media screen and (min-width: 768px) {
@@ -418,16 +424,15 @@ body {
     .mobile-menu {
         display: none;
     }
-    .mobile-menu-network {
+    /* .mobile-menu-network {
         display: flex;
         gap: 56px;
-    }
+    }*/
     .page-header {
         padding-top: 16px;
         padding-bottom: 16px;
     }
-/*
-    .menu-item:not(:last-child) {
+ /* .menu-item:not(:last-child) {
         margin-right: 40px;
     }*/
     .menu-item {
@@ -440,7 +445,6 @@ body {
         color: var(--dark-color);
         transition: color var(--time-transition-duration) var(--transition-timing-function);
     }
-
     .menu-item:hover,
     .menu-item:focus {
         color: var(--accent-color);
@@ -453,8 +457,7 @@ body {
         color: var(--dark-color);
         /*position: relative;*/
         transition: color var(--time-transition-duration) var(--transition-timing-function);
-    }
-    
+    }   
     .menu-link:hover,
     .menu-link:focus {
         color: var(--accent-color);
@@ -1389,35 +1392,26 @@ transition: opacity var(--time-transition-duration) var(--transition-timing-func
     transition: transform var(--time-transition-duration) var(--transition-timing-function);
 }
 
-
 @media screen and (max-width: 767px) {
     .modal {
-        width: 320px;
-        /*1111111
-        min-width: 392px;*/
+        max-width: 392px;
+        width: 100%;
         padding: 72px 16px 24px 16px;
     }
 }
 
+@media screen and (min-width: 428px) {
+    .modal {
+        max-width: 408px;
+        padding: 72px 16px 24px 16px;
+    }
+}
+/*
 @media screen and (min-width: 768px) {
     .modal {
         min-width: 408px;
         padding: 72px 24px 24px 24px;
         }
-}
-/*
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    min-width: 408px;
-    height: 584px;
-    padding: 72px 24px 24px 24px;
-    background: #FCFCFC;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transition: transform var(--time-transition-duration) var(--transition-timing-function);
 }*/
 
 .modal-close-btn {
@@ -1432,7 +1426,6 @@ transition: opacity var(--time-transition-duration) var(--transition-timing-func
     border-radius: 50%;
     background-color: var(--border-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    /*padding: 0;*/
     transition-property: background-color, fill;
     transition: var(--time-transition-duration) var(--transition-timing-function);
 }
@@ -1554,7 +1547,6 @@ transition: opacity var(--time-transition-duration) var(--transition-timing-func
     outline: none;
 }
 
-
 .form-input-icon {
     position: absolute;
     fill: var(--dark-color);
@@ -1649,27 +1641,4 @@ transition: opacity var(--time-transition-duration) var(--transition-timing-func
 .btn:focus {
     background-color: var(--accent-color);
 }
-
 /* ============ /MODAL FORM ================
-.container {
-    width: 582/768/1158px;
-}
-В мене прописано наступних на рядках для планшетної версії: 
-380,605,690 
-media screen and (min-width: 768px) {
-    .container {
-        width: 768px;
-    }
-
-860,966,1302 @media screen and (min-width: 768px) {
-        .container {
-            width: 582px;
-        }
-
-        нижче відповідно для десктоп 1158px;
-
-        Можливо мені потрібно вписати для мобільної версії усюди:
-        /* .container {
-        width: 428px;
-    }
-         399*/
